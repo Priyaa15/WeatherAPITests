@@ -1,0 +1,1379 @@
+2019-03-27 15:55:08 INFO  AC1_GetDatabyLatAndLon:40 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 15:55:08 INFO  AC1_GetDatabyLatAndLon:42 - Reading the Expected Response from a json file and store it
+2019-03-27 15:55:08 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 15:55:08 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 15:55:13 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 15:55:13 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 15:55:15 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 15:55:15 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 15:55:15 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 15:55:15 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 15:55:15 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 15:55:15 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:55:15 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 15:55:15 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:55:15 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 15:55:15 DEBUG headers:281 - >> Accept: */*
+2019-03-27 15:55:15 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 15:55:15 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 15:55:15 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 15:55:15 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 15:55:15 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 04:55:15 GMT[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "X-RateLimit-Remaining: 969[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "X-Proxy-Cache: MISS[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "X-IPLB-Instance: 27730[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:55:15 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-03-27 15:55:15 DEBUG headers:262 - << HTTP/1.1 200 OK
+2019-03-27 15:55:15 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 15:55:15 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 04:55:15 GMT
+2019-03-27 15:55:15 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 15:55:15 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 15:55:15 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 15:55:15 DEBUG headers:265 - << X-RateLimit-Remaining: 969
+2019-03-27 15:55:15 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 15:55:15 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 15:55:15 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 15:55:15 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:55:15 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:55:15 DEBUG headers:265 - << X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70
+2019-03-27 15:55:15 DEBUG headers:265 - << X-Proxy-Cache: MISS
+2019-03-27 15:55:15 DEBUG headers:265 - << Content-Encoding: gzip
+2019-03-27 15:55:15 DEBUG headers:265 - << X-IPLB-Instance: 27730
+2019-03-27 15:55:15 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 15:55:15 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 15:55:15 DEBUG wire:73 -  << "1a9[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]eR[0xcd]n[0xd4]0[0x18][0xbc][0xf3][0x14][0x95][0xcf][0xbb][0xc1][0x8e][0x9d][0x1f][0xfb][0x6][0xd7][\n]"
+2019-03-27 15:55:15 DEBUG wire:87 -  << "Q[0x9]n[0x80]"[0xe3][0x98][0xc6]"[0x8d][0x8d][0xed][0xec][0xaa][0xac][0xf6][0xd0]w[0xeb][0x83]1N[0xb3]'n[0xd1]7[0xe3][0xf9]f[0xe6][0xcb][0x85][0x8c]:k[0xa2][0xbe]][0xc8][0xd9]-[0xe3]`F[0x17][0x89]"_[0xc8][0x81][0xc4][0x89][0xa8][0xba];[0x90][0xe0]GLFLB[0xb4][0x89][0xa8][0xbe][0x93][0x95][0xe8][0x1]d[0xf7]d[0xff][0xfa][0xc5][0x2][0xfd][0x90][0x9c][0xfe][0xfe][0xfe]^Gm&[0x7][0xa6][0xff]9[0x14][0x14]HM[0x99]<R~[0xac][0xbb];*T[0xd3][0x0]4~]r|[0x1e][0x8c][0x1f][0xb][0xe3][0xe1][0xbe][0xcc]f[0xbf][0x8e][0x10]g[0x94]B[0xb8]|4[\r]o[0xdb][0xba]aM[0xd5][0xd2][0xba]?[0x90][0xe4]g[0x1d][0x87][0xa8]a[0x86][0xf5]m[0xd5][0x9]8HYg{[0xd3][0xa1]5tf[0x9d][0x89][0xe2][0xd0][0xd8][0xd2][0xa4]P[0xd8]U[0xcb]8[0xeb][0xf6]Q[0x9]8[0xfc]Z[0xe7][0x19]/[0x92]_[0xf3][0x84]Gi[0xe]e3[0x13][0x95][0x4][0xed][0xe4][0xb0][0xbe][0x16][0x15][0x83][0x9a]_[0x88][0xea][0xa0][0xb6][0x9e][0x8a]N/[0xa5][0x84][0x13]4f[0xff]K[0xa7][0xa8][0x80][0xd2]4[0xe8][0xe5]q[0x6]r[0x14][\r][0x88][0xf6][0x1c]`g[0x93][0xd2][0x1c][0xaa]k1DAX&+.wK[[0xe5][0xac][0xac][0xb1][0xb3]=[0xdd][0x14]8[0x9e][0xc1][0xcd]c[0xa1]w[0xa2][0xad][0xa4][0xdc][0xe]`[0x1c][0xbc][0x82][0x9a][0xd6]%[0xba][0xb4][0xe5]f[0x8a][0xf6][0xa5]B[0x97][0x9f][0x87]Eo[0xbe]>[0xbe][0xbe][0xc4][0xdf][0xd3][0xeb][0xcb][0x82][0xf9][0xd9][0xea]<Y[0xac][0xb8][0x10]gJ b[0xa8]([0xe7]|[0xeb][0xad][0xa7][0xa2]8M&[0xba][0x90][0xdd][0x86]>[0xd9]ht[0xca]w[0xfb]U[0xae][0xdb][0xba]d[0x91][0x85]0[0xae]j[0x89][0xc7][0xd9]>[0x85][M[0xe3]R[0xb2][0xc9][0x6]Gy[0xbb][0xc9].[0xf3][0xf0][0xe9]+[0x98]:[0x84]ag[0xf3][0x8a]_[0xec]?[0x0]"_[0xdf][0xfd][0x3][0xe4]Mrr[0x2][0x0][0x0]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "0[\r][\n]"
+2019-03-27 15:55:15 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:55:15 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 15:55:15 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@20b5f2ac
+2019-03-27 15:55:16 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3efe7086
+2019-03-27 15:55:16 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-27 15:55:16 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 15:55:16 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 15:55:16 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 15:55:16 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 15:55:16 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 15:55:17 INFO  AC1_GetDatabyLatAndLon:125 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 15:55:17 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 15:55:17 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 15:55:17 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 15:55:17 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 15:55:21 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 15:55:21 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 15:55:21 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 15:55:21 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 15:55:21 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 15:55:21 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:55:21 DEBUG wire:73 -  >> "GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 15:55:21 DEBUG headers:278 - >> GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:55:21 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 15:55:21 DEBUG headers:281 - >> Accept: */*
+2019-03-27 15:55:21 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 15:55:21 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 15:55:21 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 15:55:21 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 15:55:21 DEBUG wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 04:55:21 GMT[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "Content-Length: 39[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "X-RateLimit-Remaining: 968[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "X-IPLB-Instance: 27730[\r][\n]"
+2019-03-27 15:55:21 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:55:21 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2019-03-27 15:55:21 DEBUG headers:262 - << HTTP/1.1 400 Bad Request
+2019-03-27 15:55:21 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 15:55:21 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 04:55:21 GMT
+2019-03-27 15:55:21 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 15:55:21 DEBUG headers:265 - << Content-Length: 39
+2019-03-27 15:55:21 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 15:55:21 DEBUG headers:265 - << X-RateLimit-Remaining: 968
+2019-03-27 15:55:21 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 15:55:21 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 15:55:21 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 15:55:21 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:55:21 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:55:21 DEBUG headers:265 - << X-IPLB-Instance: 27730
+2019-03-27 15:55:21 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 15:55:21 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 15:55:21 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 15:55:21 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@22680f52
+2019-03-27 15:55:21 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 15:55:21 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 15:55:21 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 15:55:21 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 15:55:21 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 15:55:21 INFO  AC1_GetDatabyLatAndLon:146 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 15:55:21 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 15:55:21 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 15:55:21 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 15:55:21 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 15:55:22 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 15:55:22 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 15:55:22 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 15:55:22 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 15:55:22 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 15:55:22 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30 HTTP/1.1
+2019-03-27 15:55:22 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30 HTTP/1.1[\r][\n]"
+2019-03-27 15:55:22 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 15:55:22 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 15:55:22 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 15:55:22 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 15:55:22 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 15:55:22 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 15:55:22 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 15:55:22 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30 HTTP/1.1
+2019-03-27 15:55:22 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 15:55:22 DEBUG headers:281 - >> Accept: */*
+2019-03-27 15:55:22 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 15:55:22 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 15:55:22 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 15:55:22 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 15:55:23 DEBUG wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-27 15:55:23 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 15:55:23 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 04:55:22 GMT[\r][\n]"
+2019-03-27 15:55:23 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 15:55:23 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 15:55:23 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 15:55:23 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 15:55:23 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin[\r][\n]"
+2019-03-27 15:55:23 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin[\r][\n]"
+2019-03-27 15:55:23 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 15:55:23 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:55:23 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-27 15:55:23 DEBUG headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-27 15:55:23 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 15:55:23 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 04:55:22 GMT
+2019-03-27 15:55:23 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 15:55:23 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 15:55:23 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 15:55:23 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 15:55:23 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin
+2019-03-27 15:55:23 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin
+2019-03-27 15:55:23 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 15:55:23 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 15:55:23 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 15:55:23 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 15:55:23 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@619bd14c
+2019-03-27 15:55:23 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 15:55:23 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 15:55:23 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 15:55:23 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 15:55:23 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 15:55:23 INFO  AC1_GetDatabyLatAndLon:105 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 15:55:23 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 15:55:23 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 15:55:23 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 15:55:23 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 15:55:24 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 15:55:24 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 15:55:24 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 15:55:24 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 15:55:24 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 15:55:24 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:55:24 DEBUG wire:73 -  >> "GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 15:55:24 DEBUG headers:278 - >> GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:55:24 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 15:55:24 DEBUG headers:281 - >> Accept: */*
+2019-03-27 15:55:24 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 15:55:24 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 15:55:24 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 15:55:24 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 15:55:24 DEBUG wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 04:55:24 GMT[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "Content-Length: 42[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "X-RateLimit-Remaining: 967[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "X-IPLB-Instance: 27730[\r][\n]"
+2019-03-27 15:55:24 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:55:24 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2019-03-27 15:55:24 DEBUG headers:262 - << HTTP/1.1 400 Bad Request
+2019-03-27 15:55:24 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 15:55:24 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 04:55:24 GMT
+2019-03-27 15:55:24 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 15:55:24 DEBUG headers:265 - << Content-Length: 42
+2019-03-27 15:55:24 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 15:55:24 DEBUG headers:265 - << X-RateLimit-Remaining: 967
+2019-03-27 15:55:24 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 15:55:24 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 15:55:24 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 15:55:24 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:55:24 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:55:24 DEBUG headers:265 - << X-IPLB-Instance: 27730
+2019-03-27 15:55:24 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 15:55:24 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 15:55:24 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 15:55:24 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@1e34c607
+2019-03-27 15:55:24 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 15:55:24 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 15:55:24 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 15:55:24 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 15:55:24 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 15:56:21 INFO  AC1_GetDatabyLatAndLon:38 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 15:56:21 INFO  AC1_GetDatabyLatAndLon:40 - Reading the Expected Response from a json file and store it
+2019-03-27 15:56:21 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 15:56:21 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 15:56:23 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 15:56:23 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 15:56:24 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 15:56:24 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 15:56:24 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 15:56:24 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 15:56:24 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 15:56:24 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:56:24 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 15:56:24 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:56:24 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 15:56:24 DEBUG headers:281 - >> Accept: */*
+2019-03-27 15:56:24 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 15:56:24 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 15:56:24 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 15:56:24 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 15:56:24 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 04:56:24 GMT[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "X-RateLimit-Remaining: 966[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "X-Proxy-Cache: HIT[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:56:24 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-03-27 15:56:24 DEBUG headers:262 - << HTTP/1.1 200 OK
+2019-03-27 15:56:24 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 15:56:24 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 04:56:24 GMT
+2019-03-27 15:56:24 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 15:56:24 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 15:56:24 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 15:56:24 DEBUG headers:265 - << X-RateLimit-Remaining: 966
+2019-03-27 15:56:24 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 15:56:24 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 15:56:24 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 15:56:24 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:56:24 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:56:24 DEBUG headers:265 - << X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70
+2019-03-27 15:56:24 DEBUG headers:265 - << X-Proxy-Cache: HIT
+2019-03-27 15:56:24 DEBUG headers:265 - << Content-Encoding: gzip
+2019-03-27 15:56:24 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 15:56:24 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 15:56:24 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 15:56:24 DEBUG wire:73 -  << "1a9[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]eR[0xcd]n[0xd4]0[0x18][0xbc][0xf3][0x14][0x95][0xcf][0xbb][0xc1][0x8e][0x9d][0x1f][0xfb][0x6][0xd7][\n]"
+2019-03-27 15:56:24 DEBUG wire:87 -  << "Q[0x9]n[0x80]"[0xe3][0x98][0xc6]"[0x8d][0x8d][0xed][0xec][0xaa][0xac][0xf6][0xd0]w[0xeb][0x83]1N[0xb3]'n[0xd1]7[0xe3][0xf9]f[0xe6][0xcb][0x85][0x8c]:k[0xa2][0xbe]][0xc8][0xd9]-[0xe3]`F[0x17][0x89]"_[0xc8][0x81][0xc4][0x89][0xa8][0xba];[0x90][0xe0]GLFLB[0xb4][0x89][0xa8][0xbe][0x93][0x95][0xe8][0x1]d[0xf7]d[0xff][0xfa][0xc5][0x2][0xfd][0x90][0x9c][0xfe][0xfe][0xfe]^Gm&[0x7][0xa6][0xff]9[0x14][0x14]HM[0x99]<R~[0xac][0xbb];*T[0xd3][0x0]4~]r|[0x1e][0x8c][0x1f][0xb][0xe3][0xe1][0xbe][0xcc]f[0xbf][0x8e][0x10]g[0x94]B[0xb8]|4[\r]o[0xdb][0xba]aM[0xd5][0xd2][0xba]?[0x90][0xe4]g[0x1d][0x87][0xa8]a[0x86][0xf5]m[0xd5][0x9]8HYg{[0xd3][0xa1]5tf[0x9d][0x89][0xe2][0xd0][0xd8][0xd2][0xa4]P[0xd8]U[0xcb]8[0xeb][0xf6]Q[0x9]8[0xfc]Z[0xe7][0x19]/[0x92]_[0xf3][0x84]Gi[0xe]e3[0x13][0x95][0x4][0xed][0xe4][0xb0][0xbe][0x16][0x15][0x83][0x9a]_[0x88][0xea][0xa0][0xb6][0x9e][0x8a]N/[0xa5][0x84][0x13]4f[0xff]K[0xa7][0xa8][0x80][0xd2]4[0xe8][0xe5]q[0x6]r[0x14][\r][0x88][0xf6][0x1c]`g[0x93][0xd2][0x1c][0xaa]k1DAX&+.wK[[0xe5][0xac][0xac][0xb1][0xb3]=[0xdd][0x14]8[0x9e][0xc1][0xcd]c[0xa1]w[0xa2][0xad][0xa4][0xdc][0xe]`[0x1c][0xbc][0x82][0x9a][0xd6]%[0xba][0xb4][0xe5]f[0x8a][0xf6][0xa5]B[0x97][0x9f][0x87]Eo[0xbe]>[0xbe][0xbe][0xc4][0xdf][0xd3][0xeb][0xcb][0x82][0xf9][0xd9][0xea]<Y[0xac][0xb8][0x10]gJ b[0xa8]([0xe7]|[0xeb][0xad][0xa7][0xa2]8M&[0xba][0x90][0xdd][0x86]>[0xd9]ht[0xca]w[0xfb]U[0xae][0xdb][0xba]d[0x91][0x85]0[0xae]j[0x89][0xc7][0xd9]>[0x85][M[0xe3]R[0xb2][0xc9][0x6]Gy[0xbb][0xc9].[0xf3][0xf0][0xe9]+[0x98]:[0x84]ag[0xf3][0x8a]_[0xec]?[0x0]"_[0xdf][0xfd][0x3][0xe4]Mrr[0x2][0x0][0x0]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "0[\r][\n]"
+2019-03-27 15:56:24 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:56:24 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 15:56:24 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@20b5f2ac
+2019-03-27 15:56:25 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3efe7086
+2019-03-27 15:56:25 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-27 15:56:25 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 15:56:25 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 15:56:25 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 15:56:25 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 15:56:25 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 15:56:26 INFO  AC1_GetDatabyLatAndLon:123 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 15:56:26 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 15:56:26 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 15:56:26 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 15:56:26 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 15:56:27 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 15:56:27 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 15:56:27 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 15:56:27 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 15:56:27 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 15:56:27 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:56:27 DEBUG wire:73 -  >> "GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 15:56:27 DEBUG headers:278 - >> GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:56:27 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 15:56:27 DEBUG headers:281 - >> Accept: */*
+2019-03-27 15:56:27 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 15:56:27 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 15:56:27 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 15:56:27 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 15:56:27 DEBUG wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 04:56:27 GMT[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "Content-Length: 39[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "X-RateLimit-Remaining: 965[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 15:56:27 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:56:27 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2019-03-27 15:56:27 DEBUG headers:262 - << HTTP/1.1 400 Bad Request
+2019-03-27 15:56:27 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 15:56:27 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 04:56:27 GMT
+2019-03-27 15:56:27 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 15:56:27 DEBUG headers:265 - << Content-Length: 39
+2019-03-27 15:56:27 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 15:56:27 DEBUG headers:265 - << X-RateLimit-Remaining: 965
+2019-03-27 15:56:27 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 15:56:27 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 15:56:27 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 15:56:27 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:56:27 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:56:27 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 15:56:27 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 15:56:27 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 15:56:27 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 15:56:27 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@6b410923
+2019-03-27 15:56:27 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 15:56:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 15:56:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 15:56:27 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 15:56:27 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 15:56:27 INFO  AC1_GetDatabyLatAndLon:144 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 15:56:27 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 15:56:27 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 15:56:27 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 15:56:27 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 15:56:28 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 15:56:28 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 15:56:28 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 15:56:28 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 15:56:28 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 15:56:28 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30 HTTP/1.1
+2019-03-27 15:56:28 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30 HTTP/1.1[\r][\n]"
+2019-03-27 15:56:28 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 15:56:28 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 15:56:28 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 15:56:28 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 15:56:28 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 15:56:28 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 15:56:28 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 15:56:28 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30 HTTP/1.1
+2019-03-27 15:56:28 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 15:56:28 DEBUG headers:281 - >> Accept: */*
+2019-03-27 15:56:28 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 15:56:28 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 15:56:28 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 15:56:28 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 15:56:29 DEBUG wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-27 15:56:29 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 15:56:29 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 04:56:28 GMT[\r][\n]"
+2019-03-27 15:56:29 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 15:56:29 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 15:56:29 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 15:56:29 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 15:56:29 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin[\r][\n]"
+2019-03-27 15:56:29 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin[\r][\n]"
+2019-03-27 15:56:29 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 15:56:29 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:56:29 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-27 15:56:29 DEBUG headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-27 15:56:29 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 15:56:29 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 04:56:28 GMT
+2019-03-27 15:56:29 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 15:56:29 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 15:56:29 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 15:56:29 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 15:56:29 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin
+2019-03-27 15:56:29 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin
+2019-03-27 15:56:29 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 15:56:29 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 15:56:29 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 15:56:29 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 15:56:29 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@466d49f0
+2019-03-27 15:56:29 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 15:56:29 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 15:56:29 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 15:56:29 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 15:56:29 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 15:56:29 INFO  AC1_GetDatabyLatAndLon:103 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 15:56:29 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 15:56:29 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 15:56:29 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 15:56:29 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 15:56:30 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 15:56:30 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 15:56:30 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 15:56:30 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 15:56:30 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 15:56:30 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:56:30 DEBUG wire:73 -  >> "GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 15:56:30 DEBUG headers:278 - >> GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 15:56:30 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 15:56:30 DEBUG headers:281 - >> Accept: */*
+2019-03-27 15:56:30 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 15:56:30 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 15:56:30 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 15:56:30 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 15:56:30 DEBUG wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 04:56:30 GMT[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "Content-Length: 42[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "X-RateLimit-Remaining: 964[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 15:56:30 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 15:56:30 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2019-03-27 15:56:30 DEBUG headers:262 - << HTTP/1.1 400 Bad Request
+2019-03-27 15:56:30 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 15:56:30 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 04:56:30 GMT
+2019-03-27 15:56:30 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 15:56:30 DEBUG headers:265 - << Content-Length: 42
+2019-03-27 15:56:30 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 15:56:30 DEBUG headers:265 - << X-RateLimit-Remaining: 964
+2019-03-27 15:56:30 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 15:56:30 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 15:56:30 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 15:56:30 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:56:30 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 15:56:30 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 15:56:30 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 15:56:30 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 15:56:30 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 15:56:30 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@52a36910
+2019-03-27 15:56:30 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 15:56:30 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 15:56:30 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 15:56:30 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 15:56:30 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:10:05 INFO  AC1_GetDatabyLatAndLon:38 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:10:05 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:10:05 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:10:07 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:10:07 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:10:09 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:10:09 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:10:09 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:10:09 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:10:09 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:10:09 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:10:09 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:10:09 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:10:09 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:10:09 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:10:09 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:10:09 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:10:09 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:10:09 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:10:09 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:10:09 GMT[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "X-RateLimit-Remaining: 963[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "X-Proxy-Cache: MISS[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "X-IPLB-Instance: 27730[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:10:09 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-03-27 16:10:09 DEBUG headers:262 - << HTTP/1.1 200 OK
+2019-03-27 16:10:09 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:10:09 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:10:09 GMT
+2019-03-27 16:10:09 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:10:09 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 16:10:09 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 16:10:09 DEBUG headers:265 - << X-RateLimit-Remaining: 963
+2019-03-27 16:10:09 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 16:10:09 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:10:09 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:10:09 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:10:09 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:10:09 DEBUG headers:265 - << X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70
+2019-03-27 16:10:09 DEBUG headers:265 - << X-Proxy-Cache: MISS
+2019-03-27 16:10:09 DEBUG headers:265 - << Content-Encoding: gzip
+2019-03-27 16:10:09 DEBUG headers:265 - << X-IPLB-Instance: 27730
+2019-03-27 16:10:09 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:10:09 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:10:09 DEBUG wire:73 -  << "1b4[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]eR[0xcd]n[0xd4]0[0x18][0xbc][0xf3][0x14][0x95][0xcf]Yc;[0xff][0xbe]Q[0x89]S[0x85][0xa8]Tn[0x80]"[0xe3][0x98][0xc6][0xaa][0x9b][0x4][0xdb][0xd9]UY[0xed][0xa1][0xef][0xd6][0x7]c[0xec]fO\[0xa2]h[0xe6][0xfb]&3[0xf3][0xe5]LF[0x15][0x15][0x91][0xdf][0xcf][0xe4]d[0xe7]q[0xd0][0xa3][0xf5]D[0x92][0x87][0x87][0xcf][0xa4] ~"R4[0x5]Y[0x97][0x11][0xd8][0x8]d[0xf5]&[0x10][0xd9][0xb5]=[0x15]]A[0xa2]}6[0x97][0xd9][0x80][0xfc][0x14][0xac][0xfa][0xf1][0xf1]Ny[0xa5]'[0x8b][0xc1][0xe5][0xd7][0x90]X0[0x82][0xf1][0xfe][0xc0][0xca][0x83]hoX-9[0x3][0xa9][0x97]m[0x8e][0xfe]e[0xd0][0xcb][0x98]&[0xee][0xef][0x12][0xe6][0x96]m[0x84]6g[0xc][0xc2][0xe9][0xa5][0xae][0xcb][0xa6])+[0xd6]S[0xde]7p[0x11][0x16][0xa7][0xfc][0xe0][0x15][0xbc][0x8][0xc1]h#j`QEs[0xd5]a[0x2]:NE"Kh[0xe4]8aM[0xd3][0x94][0xb5][0xad][0xe0];[0x94][0x12][0xe][0xbf]7[0xe7][0xb0][0x11][0x96]-N[0x87][0xfc]4*D[0xac][0x7][0xb7]&[0xf][0xbc][0xa2]5[0xe4][0x8f][0x16]FDE[0xb1][0xeb][0x96][0x99][0xc8][0x16][0xba][0xdb]1)V][0xdf][0xa1][0x1][0x94]g[0xfe][0xcb])Y[\r][0xa5]iP[0xf3][0xa3][0x3]s[0xa8][0xa0]4[0x9a][0xd3][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "c[0x15]-[0xb][0xa2][0xfe]Xt[0xd8][0x3]DU[0x92][0xf3][0x86][0xb6]Ws[0xb9]}^[0xb5][0x5]1[0xce][0x1c][0xaf][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "%[0x1c][0x0]zL[0xe3]]'h[0x9d][0xf][0xa1]-[0xac][0xc2]P[0xd8]foC.[0x80]K[0xd6][0xa5].m|[0x19]f[0x95]m[0xdd][0xbe][0xbd][0xfa][0xa7][0xe9][0xed]u[0x6]~2[\n]"
+2019-03-27 16:10:09 DEBUG wire:87 -  << "A[0xf1][0x85]3[0xb1]:[0xe5]![0x9a]U[0xe9][0xac][0xef][0x5]v[0xac]JF[0x83][0xf6]v[0x8d]6[0xf3]_[0x8f][0xc6]k4s[0xb3][0x9f][0xe7][0x92]?[0x17][0xc][0xa2][0x10]^J[0xd1]c9[0x9a][0xe7]5[0xb7][0x4][0x8b][0xe3][0xc][0x8b]})p[0xb2][0xf7][0xe3][0xec]2[0xf7]_[0xbe]aR[0xad][0xeb][0xb0]O[0x97][0xb4][0xbf][0xfc][0xdc][0xff][0x4]$[0xbe]|[0xf8][0x7][0xd8][0x1d][0x85]F[0x89][0x2][0x0][0x0]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "0[\r][\n]"
+2019-03-27 16:10:09 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:10:09 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:10:09 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@7fc44dec
+2019-03-27 16:10:09 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:10:09 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:10:09 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:10:09 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:10:09 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:10:09 INFO  AC1_GetDatabyLatAndLon:124 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:10:09 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:10:09 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:10:09 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:10:09 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:10:11 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:10:11 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:10:11 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:10:11 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:10:11 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:10:11 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:10:11 DEBUG wire:73 -  >> "GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:10:11 DEBUG headers:278 - >> GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:10:11 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:10:11 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:10:11 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:10:11 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:10:11 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:10:11 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:10:11 DEBUG wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:10:11 GMT[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "Content-Length: 39[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "X-RateLimit-Remaining: 962[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "X-IPLB-Instance: 27730[\r][\n]"
+2019-03-27 16:10:11 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:10:11 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2019-03-27 16:10:11 DEBUG headers:262 - << HTTP/1.1 400 Bad Request
+2019-03-27 16:10:11 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:10:11 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:10:11 GMT
+2019-03-27 16:10:11 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:10:11 DEBUG headers:265 - << Content-Length: 39
+2019-03-27 16:10:11 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 16:10:11 DEBUG headers:265 - << X-RateLimit-Remaining: 962
+2019-03-27 16:10:11 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 16:10:11 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:10:11 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:10:11 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:10:11 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:10:11 DEBUG headers:265 - << X-IPLB-Instance: 27730
+2019-03-27 16:10:11 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:10:11 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:10:11 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:10:11 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@7072bc39
+2019-03-27 16:10:11 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:10:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:10:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:10:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:10:11 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:10:11 INFO  AC1_GetDatabyLatAndLon:145 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:10:11 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:10:11 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:10:11 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:10:11 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:10:12 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:10:12 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:10:12 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:10:12 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:10:12 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:10:12 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30 HTTP/1.1
+2019-03-27 16:10:12 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30 HTTP/1.1[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:10:12 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30 HTTP/1.1
+2019-03-27 16:10:12 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:10:12 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:10:12 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:10:12 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:10:12 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:10:12 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:10:12 DEBUG wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:10:12 GMT[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 16:10:12 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:10:12 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-27 16:10:12 DEBUG headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-27 16:10:12 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:10:12 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:10:12 GMT
+2019-03-27 16:10:12 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:10:12 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 16:10:12 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:10:12 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:10:12 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin
+2019-03-27 16:10:12 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin
+2019-03-27 16:10:12 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 16:10:12 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:10:12 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:10:12 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:10:12 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@2024293c
+2019-03-27 16:10:12 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:10:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:10:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:10:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:10:12 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:10:12 INFO  AC1_GetDatabyLatAndLon:104 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:10:12 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:10:12 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:10:12 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:10:12 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:10:14 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:10:14 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:10:14 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:10:14 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:10:14 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:10:14 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:10:14 DEBUG wire:73 -  >> "GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:10:14 DEBUG headers:278 - >> GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:10:14 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:10:14 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:10:14 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:10:14 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:10:14 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:10:14 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:10:14 DEBUG wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:10:14 GMT[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "Content-Length: 42[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "X-RateLimit-Remaining: 961[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 16:10:14 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:10:14 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2019-03-27 16:10:14 DEBUG headers:262 - << HTTP/1.1 400 Bad Request
+2019-03-27 16:10:14 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:10:14 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:10:14 GMT
+2019-03-27 16:10:14 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:10:14 DEBUG headers:265 - << Content-Length: 42
+2019-03-27 16:10:14 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 16:10:14 DEBUG headers:265 - << X-RateLimit-Remaining: 961
+2019-03-27 16:10:14 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 16:10:14 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:10:14 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:10:14 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:10:14 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:10:14 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 16:10:14 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:10:14 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:10:14 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:10:14 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@5b69fd74
+2019-03-27 16:10:14 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:10:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:10:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:10:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:10:14 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:10:59 INFO  AC1_GetDatabyLatAndLon:38 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:10:59 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:10:59 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:11:01 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:11:01 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:11:02 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:11:02 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:11:02 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:11:02 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:11:02 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:11:02 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:11:02 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 16:11:02 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:11:02 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:11:02 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:11:02 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:11:02 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:11:02 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:11:02 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:11:02 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:11:02 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:11:02 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:11:02 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:11:02 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:11:02 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:11:02 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:11:03 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:11:02 GMT[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "X-RateLimit-Remaining: 960[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "X-Proxy-Cache: HIT[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:11:03 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-03-27 16:11:03 DEBUG headers:262 - << HTTP/1.1 200 OK
+2019-03-27 16:11:03 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:11:03 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:11:02 GMT
+2019-03-27 16:11:03 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:11:03 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 16:11:03 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 16:11:03 DEBUG headers:265 - << X-RateLimit-Remaining: 960
+2019-03-27 16:11:03 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 16:11:03 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:11:03 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:11:03 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:11:03 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:11:03 DEBUG headers:265 - << X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70
+2019-03-27 16:11:03 DEBUG headers:265 - << X-Proxy-Cache: HIT
+2019-03-27 16:11:03 DEBUG headers:265 - << Content-Encoding: gzip
+2019-03-27 16:11:03 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 16:11:03 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:11:03 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:11:03 DEBUG wire:73 -  << "1b4[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]eR[0xcd]n[0xd4]0[0x18][0xbc][0xf3][0x14][0x95][0xcf]Yc;[0xff][0xbe]Q[0x89]S[0x85][0xa8]Tn[0x80]"[0xe3][0x98][0xc6][0xaa][0x9b][0x4][0xdb][0xd9]UY[0xed][0xa1][0xef][0xd6][0x7]c[0xec]fO\[0xa2]h[0xe6][0xfb]&3[0xf3][0xe5]LF[0x15][0x15][0x91][0xdf][0xcf][0xe4]d[0xe7]q[0xd0][0xa3][0xf5]D[0x92][0x87][0x87][0xcf][0xa4] ~"R4[0x5]Y[0x97][0x11][0xd8][0x8]d[0xf5]&[0x10][0xd9][0xb5]=[0x15]]A[0xa2]}6[0x97][0xd9][0x80][0xfc][0x14][0xac][0xfa][0xf1][0xf1]Ny[0xa5]'[0x8b][0xc1][0xe5][0xd7][0x90]X0[0x82][0xf1][0xfe][0xc0][0xca][0x83]hoX-9[0x3][0xa9][0x97]m[0x8e][0xfe]e[0xd0][0xcb][0x98]&[0xee][0xef][0x12][0xe6][0x96]m[0x84]6g[0xc][0xc2][0xe9][0xa5][0xae][0xcb][0xa6])+[0xd6]S[0xde]7p[0x11][0x16][0xa7][0xfc][0xe0][0x15][0xbc][0x8][0xc1]h#j`QEs[0xd5]a[0x2]:NE"Kh[0xe4]8aM[0xd3][0x94][0xb5][0xad][0xe0];[0x94][0x12][0xe][0xbf]7[0xe7][0xb0][0x11][0x96]-N[0x87][0xfc]4*D[0xac][0x7][0xb7]&[0xf][0xbc][0xa2]5[0xe4][0x8f][0x16]FDE[0xb1][0xeb][0x96][0x99][0xc8][0x16][0xba][0xdb]1)V][0xdf][0xa1][0x1][0x94]g[0xfe][0xcb])Y[\r][0xa5]iP[0xf3][0xa3][0x3]s[0xa8][0xa0]4[0x9a][0xd3][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "c[0x15]-[0xb][0xa2][0xfe]Xt[0xd8][0x3]DU[0x92][0xf3][0x86][0xb6]Ws[0xb9]}^[0xb5][0x5]1[0xce][0x1c][0xaf][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "%[0x1c][0x0]zL[0xe3]]'h[0x9d][0xf][0xa1]-[0xac][0xc2]P[0xd8]foC.[0x80]K[0xd6][0xa5].m|[0x19]f[0x95]m[0xdd][0xbe][0xbd][0xfa][0xa7][0xe9][0xed]u[0x6]~2[\n]"
+2019-03-27 16:11:03 DEBUG wire:87 -  << "A[0xf1][0x85]3[0xb1]:[0xe5]![0x9a]U[0xe9][0xac][0xef][0x5]v[0xac]JF[0x83][0xf6]v[0x8d]6[0xf3]_[0x8f][0xc6]k4s[0xb3][0x9f][0xe7][0x92]?[0x17][0xc][0xa2][0x10]^J[0xd1]c9[0x9a][0xe7]5[0xb7][0x4][0x8b][0xe3][0xc][0x8b]})p[0xb2][0xf7][0xe3][0xec]2[0xf7]_[0xbe]aR[0xad][0xeb][0xb0]O[0x97][0xb4][0xbf][0xfc][0xdc][0xff][0x4]$[0xbe]|[0xf8][0x7][0xd8][0x1d][0x85]F[0x89][0x2][0x0][0x0]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "0[\r][\n]"
+2019-03-27 16:11:03 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:11:03 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:11:03 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@7fc44dec
+2019-03-27 16:11:03 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@346939bf
+2019-03-27 16:11:03 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-27 16:11:03 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:11:03 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:11:03 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:11:04 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:11:04 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:11:04 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:11:04 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:11:04 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:11:04 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:11:04 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:11:04 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:11:04 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:11:04 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:11:04 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:11:04 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:11:04 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:11:04 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:11:04 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:11:04 GMT[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "X-RateLimit-Remaining: 959[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "X-Proxy-Cache: HIT[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:11:04 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-03-27 16:11:04 DEBUG headers:262 - << HTTP/1.1 200 OK
+2019-03-27 16:11:04 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:11:04 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:11:04 GMT
+2019-03-27 16:11:04 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:11:04 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 16:11:04 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 16:11:04 DEBUG headers:265 - << X-RateLimit-Remaining: 959
+2019-03-27 16:11:04 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 16:11:04 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:11:04 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:11:04 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:11:04 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:11:04 DEBUG headers:265 - << X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70
+2019-03-27 16:11:04 DEBUG headers:265 - << X-Proxy-Cache: HIT
+2019-03-27 16:11:04 DEBUG headers:265 - << Content-Encoding: gzip
+2019-03-27 16:11:04 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 16:11:04 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:11:04 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:11:04 DEBUG wire:73 -  << "1b4[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]eR[0xcd]n[0xd4]0[0x18][0xbc][0xf3][0x14][0x95][0xcf]Yc;[0xff][0xbe]Q[0x89]S[0x85][0xa8]Tn[0x80]"[0xe3][0x98][0xc6][0xaa][0x9b][0x4][0xdb][0xd9]UY[0xed][0xa1][0xef][0xd6][0x7]c[0xec]fO\[0xa2]h[0xe6][0xfb]&3[0xf3][0xe5]LF[0x15][0x15][0x91][0xdf][0xcf][0xe4]d[0xe7]q[0xd0][0xa3][0xf5]D[0x92][0x87][0x87][0xcf][0xa4] ~"R4[0x5]Y[0x97][0x11][0xd8][0x8]d[0xf5]&[0x10][0xd9][0xb5]=[0x15]]A[0xa2]}6[0x97][0xd9][0x80][0xfc][0x14][0xac][0xfa][0xf1][0xf1]Ny[0xa5]'[0x8b][0xc1][0xe5][0xd7][0x90]X0[0x82][0xf1][0xfe][0xc0][0xca][0x83]hoX-9[0x3][0xa9][0x97]m[0x8e][0xfe]e[0xd0][0xcb][0x98]&[0xee][0xef][0x12][0xe6][0x96]m[0x84]6g[0xc][0xc2][0xe9][0xa5][0xae][0xcb][0xa6])+[0xd6]S[0xde]7p[0x11][0x16][0xa7][0xfc][0xe0][0x15][0xbc][0x8][0xc1]h#j`QEs[0xd5]a[0x2]:NE"Kh[0xe4]8aM[0xd3][0x94][0xb5][0xad][0xe0];[0x94][0x12][0xe][0xbf]7[0xe7][0xb0][0x11][0x96]-N[0x87][0xfc]4*D[0xac][0x7][0xb7]&[0xf][0xbc][0xa2]5[0xe4][0x8f][0x16]FDE[0xb1][0xeb][0x96][0x99][0xc8][0x16][0xba][0xdb]1)V][0xdf][0xa1][0x1][0x94]g[0xfe][0xcb])Y[\r][0xa5]iP[0xf3][0xa3][0x3]s[0xa8][0xa0]4[0x9a][0xd3][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "c[0x15]-[0xb][0xa2][0xfe]Xt[0xd8][0x3]DU[0x92][0xf3][0x86][0xb6]Ws[0xb9]}^[0xb5][0x5]1[0xce][0x1c][0xaf][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "%[0x1c][0x0]zL[0xe3]]'h[0x9d][0xf][0xa1]-[0xac][0xc2]P[0xd8]foC.[0x80]K[0xd6][0xa5].m|[0x19]f[0x95]m[0xdd][0xbe][0xbd][0xfa][0xa7][0xe9][0xed]u[0x6]~2[\n]"
+2019-03-27 16:11:04 DEBUG wire:87 -  << "A[0xf1][0x85]3[0xb1]:[0xe5]![0x9a]U[0xe9][0xac][0xef][0x5]v[0xac]JF[0x83][0xf6]v[0x8d]6[0xf3]_[0x8f][0xc6]k4s[0xb3][0x9f][0xe7][0x92]?[0x17][0xc][0xa2][0x10]^J[0xd1]c9[0x9a][0xe7]5[0xb7][0x4][0x8b][0xe3][0xc][0x8b]})p[0xb2][0xf7][0xe3][0xec]2[0xf7]_[0xbe]aR[0xad][0xeb][0xb0]O[0x97][0xb4][0xbf][0xfc][0xdc][0xff][0x4]$[0xbe]|[0xf8][0x7][0xd8][0x1d][0x85]F[0x89][0x2][0x0][0x0]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "0[\r][\n]"
+2019-03-27 16:11:04 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:11:04 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:11:04 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@4eed46ee
+2019-03-27 16:11:04 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@191ae03f
+2019-03-27 16:11:04 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-27 16:11:05 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:11:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:11:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:11:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:11:05 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:11:05 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:62588<->192.99.65.197:443 closed
+2019-03-27 16:11:05 INFO  AC1_GetDatabyLatAndLon:124 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:11:05 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:11:05 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:11:05 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:11:05 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:11:06 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:11:06 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:11:06 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:11:06 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:11:06 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:11:06 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:11:06 DEBUG wire:73 -  >> "GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:11:06 DEBUG headers:278 - >> GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:11:06 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:11:06 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:11:06 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:11:06 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:11:06 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:11:06 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:11:06 DEBUG wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:11:06 GMT[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "Content-Length: 39[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "X-RateLimit-Remaining: 958[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "X-IPLB-Instance: 27730[\r][\n]"
+2019-03-27 16:11:06 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:11:06 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2019-03-27 16:11:06 DEBUG headers:262 - << HTTP/1.1 400 Bad Request
+2019-03-27 16:11:06 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:11:06 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:11:06 GMT
+2019-03-27 16:11:06 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:11:06 DEBUG headers:265 - << Content-Length: 39
+2019-03-27 16:11:07 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 16:11:07 DEBUG headers:265 - << X-RateLimit-Remaining: 958
+2019-03-27 16:11:07 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 16:11:07 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:11:07 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:11:07 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:11:07 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:11:07 DEBUG headers:265 - << X-IPLB-Instance: 27730
+2019-03-27 16:11:07 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:11:07 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:11:07 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:11:07 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@45f24169
+2019-03-27 16:11:07 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:11:07 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:11:07 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:11:07 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:11:07 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:11:07 INFO  AC1_GetDatabyLatAndLon:145 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:11:07 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:11:07 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:11:07 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:11:07 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:11:08 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:11:08 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:11:08 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:11:08 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:11:08 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:11:08 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30 HTTP/1.1
+2019-03-27 16:11:08 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30 HTTP/1.1[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:11:08 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30 HTTP/1.1
+2019-03-27 16:11:08 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:11:08 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:11:08 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:11:08 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:11:08 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:11:08 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:11:08 DEBUG wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:11:08 GMT[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 16:11:08 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:11:08 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-27 16:11:08 DEBUG headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-27 16:11:08 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:11:08 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:11:08 GMT
+2019-03-27 16:11:08 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:11:08 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 16:11:08 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:11:08 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:11:08 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin
+2019-03-27 16:11:08 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin
+2019-03-27 16:11:08 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 16:11:08 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:11:08 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:11:08 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:11:08 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@6bcbf05b
+2019-03-27 16:11:08 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:11:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:11:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:11:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:11:08 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:11:08 INFO  AC1_GetDatabyLatAndLon:104 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:11:08 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:11:08 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:11:08 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:11:08 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:11:09 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:11:09 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:11:09 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:11:09 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:11:09 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:11:09 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:11:09 DEBUG wire:73 -  >> "GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:11:09 DEBUG headers:278 - >> GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:11:09 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:11:09 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:11:09 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:11:09 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:11:09 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:11:09 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:11:09 DEBUG wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:11:09 GMT[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "Content-Length: 42[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "X-RateLimit-Remaining: 957[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 16:11:09 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:11:09 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2019-03-27 16:11:09 DEBUG headers:262 - << HTTP/1.1 400 Bad Request
+2019-03-27 16:11:09 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:11:09 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:11:09 GMT
+2019-03-27 16:11:09 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:11:09 DEBUG headers:265 - << Content-Length: 42
+2019-03-27 16:11:09 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 16:11:09 DEBUG headers:265 - << X-RateLimit-Remaining: 957
+2019-03-27 16:11:09 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 16:11:09 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:11:09 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:11:09 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:11:09 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:11:09 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 16:11:09 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:11:09 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:11:09 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:11:09 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@76911385
+2019-03-27 16:11:09 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:11:09 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:11:09 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:11:09 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:11:09 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:16:59 INFO  AC1_GetDatabyLatAndLon:38 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:16:59 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:16:59 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:17:01 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:17:01 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:17:02 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:17:02 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:17:02 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:17:02 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:17:02 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:17:02 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:17:02 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:17:02 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:17:02 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:17:02 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:17:02 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:17:02 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:17:02 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:17:02 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:17:02 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:17:02 GMT[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "X-RateLimit-Remaining: 956[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "X-Proxy-Cache: HIT[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "X-IPLB-Instance: 27730[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:17:02 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2019-03-27 16:17:02 DEBUG headers:262 - << HTTP/1.1 200 OK
+2019-03-27 16:17:02 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:17:02 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:17:02 GMT
+2019-03-27 16:17:02 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:17:02 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 16:17:02 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 16:17:02 DEBUG headers:265 - << X-RateLimit-Remaining: 956
+2019-03-27 16:17:02 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 16:17:02 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:17:02 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:17:02 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:17:02 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:17:02 DEBUG headers:265 - << X-Cache-Key: api.weatherbit.io/v2.0/current?lat=30&lon=70
+2019-03-27 16:17:02 DEBUG headers:265 - << X-Proxy-Cache: HIT
+2019-03-27 16:17:02 DEBUG headers:265 - << Content-Encoding: gzip
+2019-03-27 16:17:02 DEBUG headers:265 - << X-IPLB-Instance: 27730
+2019-03-27 16:17:02 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:17:02 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:17:02 DEBUG wire:73 -  << "1b4[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]eR[0xcd]n[0xd4]0[0x18][0xbc][0xf3][0x14][0x95][0xcf]Yc;[0xff][0xbe]Q[0x89]S[0x85][0xa8]Tn[0x80]"[0xe3][0x98][0xc6][0xaa][0x9b][0x4][0xdb][0xd9]UY[0xed][0xa1][0xef][0xd6][0x7]c[0xec]fO\[0xa2]h[0xe6][0xfb]&3[0xf3][0xe5]LF[0x15][0x15][0x91][0xdf][0xcf][0xe4]d[0xe7]q[0xd0][0xa3][0xf5]D[0x92][0x87][0x87][0xcf][0xa4] ~"R4[0x5]Y[0x97][0x11][0xd8][0x8]d[0xf5]&[0x10][0xd9][0xb5]=[0x15]]A[0xa2]}6[0x97][0xd9][0x80][0xfc][0x14][0xac][0xfa][0xf1][0xf1]Ny[0xa5]'[0x8b][0xc1][0xe5][0xd7][0x90]X0[0x82][0xf1][0xfe][0xc0][0xca][0x83]hoX-9[0x3][0xa9][0x97]m[0x8e][0xfe]e[0xd0][0xcb][0x98]&[0xee][0xef][0x12][0xe6][0x96]m[0x84]6g[0xc][0xc2][0xe9][0xa5][0xae][0xcb][0xa6])+[0xd6]S[0xde]7p[0x11][0x16][0xa7][0xfc][0xe0][0x15][0xbc][0x8][0xc1]h#j`QEs[0xd5]a[0x2]:NE"Kh[0xe4]8aM[0xd3][0x94][0xb5][0xad][0xe0];[0x94][0x12][0xe][0xbf]7[0xe7][0xb0][0x11][0x96]-N[0x87][0xfc]4*D[0xac][0x7][0xb7]&[0xf][0xbc][0xa2]5[0xe4][0x8f][0x16]FDE[0xb1][0xeb][0x96][0x99][0xc8][0x16][0xba][0xdb]1)V][0xdf][0xa1][0x1][0x94]g[0xfe][0xcb])Y[\r][0xa5]iP[0xf3][0xa3][0x3]s[0xa8][0xa0]4[0x9a][0xd3][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "c[0x15]-[0xb][0xa2][0xfe]Xt[0xd8][0x3]DU[0x92][0xf3][0x86][0xb6]Ws[0xb9]}^[0xb5][0x5]1[0xce][0x1c][0xaf][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "%[0x1c][0x0]zL[0xe3]]'h[0x9d][0xf][0xa1]-[0xac][0xc2]P[0xd8]foC.[0x80]K[0xd6][0xa5].m|[0x19]f[0x95]m[0xdd][0xbe][0xbd][0xfa][0xa7][0xe9][0xed]u[0x6]~2[\n]"
+2019-03-27 16:17:02 DEBUG wire:87 -  << "A[0xf1][0x85]3[0xb1]:[0xe5]![0x9a]U[0xe9][0xac][0xef][0x5]v[0xac]JF[0x83][0xf6]v[0x8d]6[0xf3]_[0x8f][0xc6]k4s[0xb3][0x9f][0xe7][0x92]?[0x17][0xc][0xa2][0x10]^J[0xd1]c9[0x9a][0xe7]5[0xb7][0x4][0x8b][0xe3][0xc][0x8b]})p[0xb2][0xf7][0xe3][0xec]2[0xf7]_[0xbe]aR[0xad][0xeb][0xb0]O[0x97][0xb4][0xbf][0xfc][0xdc][0xff][0x4]$[0xbe]|[0xf8][0x7][0xd8][0x1d][0x85]F[0x89][0x2][0x0][0x0]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "0[\r][\n]"
+2019-03-27 16:17:02 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:17:02 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:17:02 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@7fc44dec
+2019-03-27 16:17:02 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@675d8c96
+2019-03-27 16:17:02 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2019-03-27 16:17:03 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:17:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:17:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:17:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:17:03 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:17:03 INFO  AC1_GetDatabyLatAndLon:124 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:17:03 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:17:03 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:17:03 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:17:03 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:17:05 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:17:05 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:17:05 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:17:05 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:17:05 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:17:05 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:17:05 DEBUG wire:73 -  >> "GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:17:05 DEBUG headers:278 - >> GET /v2.0/current?lon=abc&lat=xyz&key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:17:05 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:17:05 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:17:05 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:17:05 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:17:05 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:17:05 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:17:05 DEBUG wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:17:05 GMT[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "Content-Length: 39[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "X-RateLimit-Remaining: 955[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "X-IPLB-Instance: 27731[\r][\n]"
+2019-03-27 16:17:05 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:17:05 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2019-03-27 16:17:05 DEBUG headers:262 - << HTTP/1.1 400 Bad Request
+2019-03-27 16:17:05 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:17:05 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:17:05 GMT
+2019-03-27 16:17:05 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:17:05 DEBUG headers:265 - << Content-Length: 39
+2019-03-27 16:17:05 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 16:17:05 DEBUG headers:265 - << X-RateLimit-Remaining: 955
+2019-03-27 16:17:05 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 16:17:05 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:17:05 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:17:05 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:17:05 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:17:05 DEBUG headers:265 - << X-IPLB-Instance: 27731
+2019-03-27 16:17:05 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:17:05 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:17:05 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:17:05 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@57bd2029
+2019-03-27 16:17:05 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:17:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:17:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:17:05 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:17:05 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:17:05 INFO  AC1_GetDatabyLatAndLon:145 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:17:05 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:17:05 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:17:05 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:17:05 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:17:06 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:17:06 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:17:06 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:17:06 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:17:06 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:17:06 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?lon=70&lat=30 HTTP/1.1
+2019-03-27 16:17:06 DEBUG wire:73 -  >> "GET /v2.0/current?lon=70&lat=30 HTTP/1.1[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:17:06 DEBUG headers:278 - >> GET /v2.0/current?lon=70&lat=30 HTTP/1.1
+2019-03-27 16:17:06 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:17:06 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:17:06 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:17:06 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:17:06 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:17:06 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:17:06 DEBUG wire:73 -  << "HTTP/1.1 403 Forbidden[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:17:06 GMT[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  << "X-IPLB-Instance: 27730[\r][\n]"
+2019-03-27 16:17:06 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:17:06 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 403 Forbidden
+2019-03-27 16:17:06 DEBUG headers:262 - << HTTP/1.1 403 Forbidden
+2019-03-27 16:17:06 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:17:06 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:17:06 GMT
+2019-03-27 16:17:06 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:17:06 DEBUG headers:265 - << Transfer-Encoding: chunked
+2019-03-27 16:17:06 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:17:06 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:17:06 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin
+2019-03-27 16:17:06 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Access-Control-Allow-Origin
+2019-03-27 16:17:06 DEBUG headers:265 - << X-IPLB-Instance: 27730
+2019-03-27 16:17:06 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:17:06 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:17:06 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:17:06 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@466d49f0
+2019-03-27 16:17:06 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:17:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:17:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:17:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:17:06 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-03-27 16:17:06 INFO  AC1_GetDatabyLatAndLon:104 - Starting GET current Weather Data by Lattitude and Longitude Test
+2019-03-27 16:17:06 INFO  URL:25 - Website URI : https://weatherbit.io
+2019-03-27 16:17:06 INFO  RESTCalls:28 - Inside GETRequest call
+2019-03-27 16:17:06 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.weatherbit.io:443
+2019-03-27 16:17:06 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.weatherbit.io:443
+2019-03-27 16:17:07 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2019-03-27 16:17:07 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-03-27 16:17:07 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2019-03-27 16:17:07 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2019-03-27 16:17:07 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2019-03-27 16:17:07 DEBUG DefaultClientConnection:274 - Sending request: GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:17:08 DEBUG wire:73 -  >> "GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  >> "Host: api.weatherbit.io[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  >> "[\r][\n]"
+2019-03-27 16:17:08 DEBUG headers:278 - >> GET /v2.0/current?key=13e43cc708534c2ba8463e0dc51b0e94 HTTP/1.1
+2019-03-27 16:17:08 DEBUG headers:281 - >> Content-Type: application/json; charset=UTF-8
+2019-03-27 16:17:08 DEBUG headers:281 - >> Accept: */*
+2019-03-27 16:17:08 DEBUG headers:281 - >> Host: api.weatherbit.io
+2019-03-27 16:17:08 DEBUG headers:281 - >> Connection: Keep-Alive
+2019-03-27 16:17:08 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_201)
+2019-03-27 16:17:08 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2019-03-27 16:17:08 DEBUG wire:73 -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "Server: openresty/1.11.2.2[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "Date: Wed, 27 Mar 2019 05:17:08 GMT[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "Content-Length: 42[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "X-RateLimit-Limit: 1000[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "X-RateLimit-Remaining: 954[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "X-RateLimit-Reset: 1553737702[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "Access-Control-Allow-Methods: GET, OPTIONS, POST[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "X-IPLB-Instance: 27730[\r][\n]"
+2019-03-27 16:17:08 DEBUG wire:73 -  << "[\r][\n]"
+2019-03-27 16:17:08 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 400 Bad Request
+2019-03-27 16:17:08 DEBUG headers:262 - << HTTP/1.1 400 Bad Request
+2019-03-27 16:17:08 DEBUG headers:265 - << Server: openresty/1.11.2.2
+2019-03-27 16:17:08 DEBUG headers:265 - << Date: Wed, 27 Mar 2019 05:17:08 GMT
+2019-03-27 16:17:08 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2019-03-27 16:17:08 DEBUG headers:265 - << Content-Length: 42
+2019-03-27 16:17:08 DEBUG headers:265 - << X-RateLimit-Limit: 1000
+2019-03-27 16:17:08 DEBUG headers:265 - << X-RateLimit-Remaining: 954
+2019-03-27 16:17:08 DEBUG headers:265 - << X-RateLimit-Reset: 1553737702
+2019-03-27 16:17:08 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2019-03-27 16:17:08 DEBUG headers:265 - << Access-Control-Allow-Methods: GET, OPTIONS, POST
+2019-03-27 16:17:08 DEBUG headers:265 - << Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:17:08 DEBUG headers:265 - << Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+2019-03-27 16:17:08 DEBUG headers:265 - << X-IPLB-Instance: 27730
+2019-03-27 16:17:08 DEBUG DefaultHttpClient:509 - Connection can be kept alive indefinitely
+2019-03-27 16:17:08 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-03-27 16:17:08 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-03-27 16:17:08 DEBUG RESTCalls:33 - io.restassured.internal.RequestSpecificationImpl@52a36910
+2019-03-27 16:17:08 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_AU", UTF-8, parsed); will try to load it.
+2019-03-27 16:17:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_AU.ftl"): Not found
+2019-03-27 16:17:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-03-27 16:17:08 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-03-27 16:17:08 DEBUG cache:45 - Loading template for "Extent.ftl"("en_AU", UTF-8, parsed) from "jar:file:/C:/Users/priya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

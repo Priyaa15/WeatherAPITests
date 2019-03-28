@@ -1,0 +1,47 @@
+{
+    "data": [
+        {
+            "rh": 76,
+            "pod": "d",
+            "lon": 13.39,
+            "pres": 1019.9,
+            "timezone": "Europe/Berlin",
+            "ob_time": "2019-03-27 12:34",
+            "country_code": "DE",
+            "clouds": 100,
+            "ts": 1553690040,
+            "solar_rad": 127.6,
+            "state_code": "16",
+            "lat": 52.52,
+            "wind_spd": 4.47,
+            "wind_cdir_full": "west",
+            "wind_cdir": "W",
+            "slp": 1029.8,
+            "vis": 1.5,
+            "h_angle": 12.9,
+            "sunset": "17:31",
+            "dni": 850.19,
+            "dewpt": 4.9,
+            "snow": 0,
+            "uv": 3.20818,
+            "precip": 0.0507812,
+            "wind_dir": 262,
+            "sunrise": "04:50",
+            "ghi": 638.25,
+            "dhi": 105.92,
+            "aqi": 36,
+            "city_name": "Mitte",
+            "weather": {
+                "icon": "d01d",
+                "code": "301",
+                "description": "Drizzle"
+            },
+            "datetime": "2019-03-27:12",
+            "temp": 8.9,
+            "station": "C6421",
+            "elev_angle": 39.35,
+            "app_temp": 8.9
+        }
+    ],
+    "count": 1
+}

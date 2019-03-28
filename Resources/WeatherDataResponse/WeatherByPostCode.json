@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "wind_cdir": "S",
+            "rh": 59,
+            "pod": "n",
+            "pres": 1001.6,
+            "timezone": "America/Chicago",
+            "ob_time": "2019-03-28 00:10",
+            "country_code": "US",
+            "clouds": 0,
+            "ts": 1553731800,
+            "solar_rad": 0,
+            "state_code": "TN",
+            "lat": "36.1107",
+            "wind_spd": 2.06,
+            "wind_cdir_full": "south",
+            "slp": 1024.9,
+            "vis": 10,
+            "lon": "-86.0203",
+            "uv": 0,
+            "datetime": "2019-03-28:00",
+            "h_angle": -90,
+            "dewpt": 6.5,
+            "aqi": null,
+            "dhi": 0,
+            "wind_dir": 180,
+            "elev_angle": -0.78,
+            "ghi": 0,
+            "precip": null,
+            "sunrise": "11:36",
+            "city_name": "Smith",
+            "weather": {
+                "icon": "c01n",
+                "code": "800",
+                "description": "Clear sky"
+            },
+            "sunset": "00:02",
+            "temp": 14.4,
+            "dni": 0,
+            "station": "F1385",
+            "app_temp": 14.5
+        }
+    ],
+    "count": 1
+}
